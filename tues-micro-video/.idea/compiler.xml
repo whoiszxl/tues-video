@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="tues-search-api" />
+        <module name="tues-video-api" />
+        <module name="tues-video" />
+        <module name="tues-member-web" />
+        <module name="tues-core" />
+        <module name="tues-video-web" />
+        <module name="tues-member" />
+        <module name="tues-member-api" />
+        <module name="tues-search-web" />
+        <module name="tues-gateway" />
+      </profile>
+    </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tues-core" options="-parameters" />
+      <module name="tues-gateway" options="-parameters" />
+      <module name="tues-member" options="-parameters" />
+      <module name="tues-member-api" options="-parameters" />
+      <module name="tues-member-web" options="-parameters" />
+      <module name="tues-search" options="-parameters" />
+      <module name="tues-search-api" options="-parameters" />
+      <module name="tues-search-web" options="-parameters" />
+      <module name="tues-video" options="-parameters" />
+      <module name="tues-video-api" options="-parameters" />
+      <module name="tues-video-web" options="-parameters" />
+    </option>
+  </component>
+</project>
