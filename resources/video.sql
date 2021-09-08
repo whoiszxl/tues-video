@@ -186,3 +186,21 @@ CREATE TABLE `member_report`(
     `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
     PRIMARY KEY (`id`)
 ) ENGINE = InnoDB CHARSET = utf8mb4 COMMENT '会员举报表';
+
+
+
+DROP TABLE IF EXISTS `video_banner`;
+CREATE TABLE `video_banner` (
+    `id`                        int(10) NOT NULL AUTO_INCREMENT COMMENT '自增主键ID',
+    `name`                      varchar(100) DEFAULT '' COMMENT '轮播图名称',
+    `type`                      tinyint(1) DEFAULT '0' COMMENT '轮播位置：0->PC首页轮播；1->app首页轮播 2->app导航小组件',
+    `pic`                       varchar(500) DEFAULT '' COMMENT '图片地址',
+    `status`                    int(1) DEFAULT '1' COMMENT '上下线状态：0->下线；1->上线',
+    `click_count`               int(11) DEFAULT '0' COMMENT '点击数',
+    `url`                       varchar(500) DEFAULT '' COMMENT '链接地址',
+    `note`                      varchar(500) DEFAULT '' COMMENT '备注',
+    `sort`                      int(3) DEFAULT '0' COMMENT '排序',
+    `created_at`                datetime DEFAULT CURRENT_TIMESTAMP COMMENT '创建时间',
+    `updated_at`                datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP COMMENT '更新时间',
+	PRIMARY KEY (`id`)
+) ENGINE = InnoDB CHARSET = utf8mb4 COMMENT '首页视频轮播表';

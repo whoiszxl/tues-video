@@ -29,8 +29,7 @@ public class MyBatisCodeGenerator {
 
     //代码生成步骤三： 配置需要生成代码的表名
     public static final String[] tableNames = new String[]{
-            "bgmusic", "member", "member_info", "member_relation", "member_report",
-            "topic", "video", "video_comment", "video_comment_like", "video_like", "video_search_history", "video_watch_history"
+            "video_banner"
     };
 
     //代码生成步骤四：直接运行就能生成了

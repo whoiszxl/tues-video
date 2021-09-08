@@ -1,5 +1,7 @@
 package com.whoiszxl.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.conditions.update.UpdateWrapper;
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.whoiszxl.entity.MemberInfo;
 import com.whoiszxl.mapper.MemberInfoMapper;
@@ -17,4 +19,17 @@ import org.springframework.stereotype.Service;
 @Service
 public class MemberInfoServiceImpl extends ServiceImpl<MemberInfoMapper, MemberInfo> implements MemberInfoService {
 
+    @Override
+    public MemberInfo getByMemberId(long memberId) {
+        LambdaQueryWrapper<MemberInfo> queryWrapper = new LambdaQueryWrapper<>();
+        queryWrapper.eq(MemberInfo::getMemberId, memberId);
+        return this.getOne(queryWrapper);
+    }
+
+    @Override
+    public boolean updateByMemberId(MemberInfo memberInfo) {
+        UpdateWrapper updateWrapper = new UpdateWrapper<>();
+        updateWrapper.eq("member_id", memberInfo.getMemberId());
+        return this.update(memberInfo, updateWrapper);
+    }
 }

@@ -19,9 +19,17 @@
         <module name="tues-gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="tues-cms" target="8" />
+      <module name="tues-cms-api" target="8" />
+      <module name="tues-cms-web" target="8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="tues-cms" options="-parameters" />
+      <module name="tues-cms-api" options="-parameters" />
+      <module name="tues-cms-web" options="-parameters" />
       <module name="tues-core" options="-parameters" />
       <module name="tues-gateway" options="-parameters" />
       <module name="tues-member" options="-parameters" />

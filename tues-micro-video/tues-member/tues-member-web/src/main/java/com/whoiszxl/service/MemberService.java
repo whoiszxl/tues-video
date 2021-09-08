@@ -2,6 +2,7 @@ package com.whoiszxl.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.whoiszxl.entity.Member;
+import com.whoiszxl.entity.vo.MemberDetailVO;
 
 /**
  * <p>
@@ -13,4 +14,9 @@ import com.whoiszxl.entity.Member;
  */
 public interface MemberService extends IService<Member> {
 
+    /**
+     * 查询当前登录用户的会员信息
+     * @return 会员信息
+     */
+    MemberDetailVO memberInfo();
 }
