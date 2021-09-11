@@ -1,6 +1,6 @@
 # whoiszxl
 
-A new flutter video application.
+A new Flutter application.
 
 ## Getting Started
 

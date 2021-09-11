@@ -1,5 +1,5 @@
 name: whoiszxl
-description: A new flutter video application.
+description: A new Flutter application.
 
 # The following line prevents the package from being accidentally published to
 # pub.dev using `pub publish`. This is preferred for private packages.
@@ -23,9 +23,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-
     # 扩展依赖
-  cupertino_icons: ^1.0.2
   fluttertoast: ^8.0.1-nullsafety.0
   dio: ^4.0.0-beta7
   webview_flutter: ^0.3.19
@@ -33,7 +31,6 @@ dependencies:
   city_pickers: ^0.1.30
   barcode_scan: ^2.0.1
   shared_preferences: ^2.0.4
-  provide: ^1.0.2
   flustars: ^2.0.1
   underline_indicator: ^0.0.2
   flutter_swiper: ^1.1.6
@@ -44,6 +41,10 @@ dependencies:
   lottie: ^1.0.1
   flutter_easyrefresh: ^2.0.6
 
+
+  # The following adds the Cupertino Icons font to your application.
+  # Use with the CupertinoIcons class for iOS style icons.
+  cupertino_icons: ^1.0.2
 
 dev_dependencies:
   flutter_test:
