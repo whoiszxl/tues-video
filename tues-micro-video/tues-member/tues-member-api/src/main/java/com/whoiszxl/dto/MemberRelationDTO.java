@@ -34,7 +34,7 @@ public class MemberRelationDTO extends AbstractObject implements Serializable {
     private Long toMemberId;
 
     @ApiModelProperty(value = "关系：1 to是from的粉丝， 2 from是to的粉丝， 3 from和to互关")
-    private Boolean relation;
+    private Integer relation;
 
     @ApiModelProperty(value = "to方昵称")
     private String toNickname;

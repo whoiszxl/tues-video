@@ -1,8 +1,10 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.whoiszxl">
    <application
-        android:label="whoiszxl"
-        android:icon="@mipmap/ic_launcher">
+        android:label="周二視頻"
+        android:icon="@mipmap/ic_launcher"
+        android:usesCleartextTraffic="true"
+       >
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"

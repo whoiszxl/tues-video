@@ -43,7 +43,7 @@ public class Topic extends AbstractObject implements Serializable {
     private Long count;
 
     @ApiModelProperty(value = "状态(0：无效 1：有效)")
-    private Boolean status;
+    private Integer status;
 
     @ApiModelProperty(value = "创建时间")
     private Date createdAt;

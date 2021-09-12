@@ -25,6 +25,7 @@ class MyApp extends StatelessWidget {
 
     return MaterialApp(
       title: '周二视频',
+      debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: ColorUtil.createMaterialColor(MyColors.mainColor),
       ),

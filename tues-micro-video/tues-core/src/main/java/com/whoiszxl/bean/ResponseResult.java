@@ -1,8 +1,6 @@
 package com.whoiszxl.bean;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
-import lombok.NoArgsConstructor;
 import lombok.experimental.Accessors;
 
 /**
@@ -12,8 +10,6 @@ import lombok.experimental.Accessors;
  **/
 @Data
 @Accessors
-@NoArgsConstructor
-@AllArgsConstructor
 public class ResponseResult<T> {
 
     /** 返回码 */
@@ -22,6 +18,9 @@ public class ResponseResult<T> {
     private String message;
     /** 返回数据 */
     private T data;
+
+    public ResponseResult() {
+    }
 
     public ResponseResult(Integer code, String message) {
         this.code = code;
@@ -47,7 +46,7 @@ public class ResponseResult<T> {
     }
 
     public static <T> ResponseResult<T> buildError(int errorCode, String message) {
-        ResponseResult<T> result = new ResponseResult<T>();
+        ResponseResult<T> result = new ResponseResult<>();
         result.setCode(errorCode);
         result.setMessage(message);
         return result;

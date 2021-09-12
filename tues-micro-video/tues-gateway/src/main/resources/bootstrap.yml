@@ -40,16 +40,3 @@ spring:
           uri: http://www.aliyun.com
           predicates:
             - Path=/activity
-
-    sentinel:
-      transport:
-        dashboard: 159.75.31.203:8858
-      datasource:
-        ds1.nacos:
-          serverAddr: aliyun.whoiszxl.com:8848
-          dataId: gw-flow
-          ruleType: gw_flow
-        ds2.nacos:
-          serverAddr: aliyun.whoiszxl.com:8848
-          dataId: api-group
-          ruleType: gw_api_group

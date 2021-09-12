@@ -40,7 +40,7 @@ public class VideoCommentLike extends AbstractObject implements Serializable {
     private Long memberId;
 
     @ApiModelProperty(value = "喜欢状态：0:无操作 1:喜欢 2:不喜欢")
-    private Boolean likeStatus;
+    private Integer likeStatus;
 
     @ApiModelProperty(value = "操作时间")
     private Date likeTime;
